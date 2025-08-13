@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>One-Page Site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      scroll-behavior: smooth;
+      background-color: #f0f8ff;
+      color: #003366;
+    }
+
+    nav {
+      background-color: #007BFF;
+      padding: 1em;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 24px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    h1, h2 {
+      color: #0056b3;
+    }
+
+    .images img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+    }
+
+    input, textarea {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #007BFF;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#images">Images</a>
+    <a href="#video">Video</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Welcome !</h1>
+    <p>This is my simple one-page website showcasing various HTML features including images, videos, and a contact form.</p>
+  </section>
+
+  <!-- Images Section -->
+  <section id="images" class="images">
+    <h2>Gallery</h2>
+    <img src="https://cdn.pixabay.com/photo/2016/11/23/00/23/hands-1851426_1280.jpg" alt="Sample Image 1">
+    <img src="https://cdn.pixabay.com/photo/2022/07/10/01/47/grades-7312021_1280.jpg" alt="Sample Image 2">
+    <img src="" alt="Sample Image 3">
+  </section>
+
+  <!-- Video Section -->
+  <section id="video">
+    <h2>A Video</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QUwxKWT6m7U?si=tpqI14ZJWUcId3Iv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
