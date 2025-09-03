@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .jumbotron {
+      background: url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4') center/cover no-repeat;
+      color: white;
+      padding: 100px 25px;
+      text-align: center;
+    }
+    .section-padding {
+      padding: 60px 0;
+    }
+    .card-img-top {
+      height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Bootstrap Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#showtimes">Showtimes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#deals">Deals</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron text-white">
+    <div class="container">
+      <h1 class="display-4">Welcome to My Bootstrap Website</h1>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">About</h2>
+    </div>
+  </section>
+
+  <!-- Showtimes Section -->
+  <section id="showtimes" class="section-padding">
+    <div class="container">
+      <h2 class="text-center mb-5">Showtimes</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <!-- Card 1: Kong Skull Island -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTcwMjcxYTQtYjJlOS00YTE1LWIyZGYtOGRlOTBlMWZmYTliXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="Kong Skull Island">
+            <div class="card-body">
+              <h5 class="card-title">Kong: Skull Island</h5>
+              <p class="card-text">A team of scientists and soldiers explore a mysterious island in the Pacific, only to encounter the mighty King Kong and other monstrous creatures.</p>
+              <div>
+                <span class="badge rounded-pill bg-info text-dark">12:00 p.m.</span>
+                <span class="badge rounded-pill bg-info text-dark">1:30 p.m.</span>
+                <span class="badge rounded-pill bg-info text-dark">3:00 p.m.</span>
+                <span class="badge rounded-pill bg-info text-dark">5:30 p.m.</span>
+                <span class="badge rounded-pill bg-info text-dark">7:00 p.m.</span>
+                <span class="badge rounded-pill bg-info text-dark">9:30 p.m.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Ghost in the Shell -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="https://m.media-amazon.com/images/M/MV5BNzBkNjdjZTctNjdhOS00NmIyLTlkNjQtY2EwNGMwYmZjNTIxXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="Ghost in the Shell">
+            <div class="card-body">
+              <h5 class="card-title">Ghost in the Shell</h5>
+              <p class="card-text">In a futuristic world, Major is the first of her kind—a cyber-enhanced human created to stop dangerous criminals and hackers threatening society.</p>
+              <div>
+                <span class="badge rounded-pill bg-info text-dark">12:00 p.m.</span>
+                <span class="badge rounded-pill bg-info text-dark">1:30 p.m.</span>
+                <span class="badge rounded-pill bg-info text-dark">3:00 p.m.</span>
+                <span class="badge rounded-pill bg-info text-dark">5:30 p.m.</span>
+                <span class="badge rounded-pill bg-info text-dark">7:00 p.m.</span>
+                <span class="badge rounded-pill bg-info text-dark">9:30 p.m.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Beauty and the Beast -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/p_beautyandthebeast_19752_32e65c36.jpeg" class="card-img-top" alt="Beauty and the Beast">
+            <div class="card-body">
+              <h5 class="card-title">Beauty and the Beast</h5>
+              <p class="card-text">A young woman is taken prisoner by a beast in his castle, only to discover the humanity and love behind the beastly appearance in this magical tale.</p>
+              <div>
+                <span class="badge rounded-pill bg-info text-dark">12:00 p.m.</span>
+                <span class="badge rounded-pill bg-info text-dark">1:30 p.m.</span>
+                <span class="badge rounded-pill bg-info text-dark">3:00 p.m.</span>
+                <span class="badge rounded-pill bg-info text-dark">5:30 p.m.</span>
+                <span class="badge rounded-pill bg-info text-dark">7:00 p.m.</span>
+                <span class="badge rounded-pill bg-info text-dark">9:30 p.m.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Deals Section -->
+  <section id="deals" class="section-padding bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Deals</h2>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 Bootstrap Website. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
